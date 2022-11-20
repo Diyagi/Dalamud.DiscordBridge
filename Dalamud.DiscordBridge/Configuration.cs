@@ -27,6 +27,8 @@ namespace Dalamud.DiscordBridge
 
         public Dictionary<XivChatType, string> CustomSlugsConfigs { get; set; } = new Dictionary<XivChatType, string>();
         public string CFPrefixConfig { get; set; } = "";
+        public List<ReplaceChatPingConfig> ReplaceChatPingsConfig { get; set; } = new();
+
 
         public void Initialize(DalamudPluginInterface pluginInterface)
         {
